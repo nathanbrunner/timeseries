@@ -1,9 +1,9 @@
 ## We read the table
-junbany <- read.table("JubanyCleaned.txt", header = TRUE, sep="\t")
+jubany <- read.table("JubanyCleaned.txt", header = TRUE, sep="\t")
 
 ## We make the time series
 ?ts
-co2 <- ts(junbany[,2],frequency=12,start=c(1994,3))
+co2 <- ts(jubany[,2],frequency=12,start=c(1994,3))
 
 ## We plot the data
 plot(co2)
